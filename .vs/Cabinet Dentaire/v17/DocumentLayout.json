@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\depenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\depenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\traitements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\traitements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\dents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\dents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\medcin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\medcin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\ado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\ado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|d:\\users\\em\\source\\repos\\cabinet dentaire\\dentiste\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}|Dentiste\\Dentiste.csproj|solutionrelative:dentiste\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Depenses.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Depenses.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Depenses.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Depenses.cs",
+              "RelativeToolTip": "Dentiste\\Depenses.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwB4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:23:24.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Traitements.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Traitements.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Traitements.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Traitements.cs",
+              "RelativeToolTip": "Dentiste\\Traitements.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwBsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:22:21.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dents.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Dents.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Dents.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Dents.cs",
+              "RelativeToolTip": "Dentiste\\Dents.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA0wB0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:21:14.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Medcin.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Medcin.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Medcin.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Medcin.cs",
+              "RelativeToolTip": "Dentiste\\Medcin.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA0wB0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:19:48.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ADO.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\ADO.cs",
+              "RelativeDocumentMoniker": "Dentiste\\ADO.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\ADO.cs",
+              "RelativeToolTip": "Dentiste\\ADO.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwBsAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:06:33.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Utilisateur.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Utilisateur.cs",
+              "RelativeToolTip": "Dentiste\\Utilisateur.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowA8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:06:01.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Program.cs",
+              "RelativeDocumentMoniker": "Dentiste\\Program.cs",
+              "ToolTip": "D:\\Users\\EM\\source\\repos\\Cabinet Dentaire\\Dentiste\\Program.cs",
+              "RelativeToolTip": "Dentiste\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T19:22:09.27Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

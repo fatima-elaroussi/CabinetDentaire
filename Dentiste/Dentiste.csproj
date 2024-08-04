@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8DBBC4F-5C3A-4EEA-B9CE-554D6FFD08F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dentiste</RootNamespace>
+    <AssemblyName>Dentiste</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADO.cs" />
+    <Compile Include="Caisse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caisse.Designer.cs">
+      <DependentUpon>Caisse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dents.Designer.cs">
+      <DependentUpon>Dents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depenses.Designer.cs">
+      <DependentUpon>Depenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste Traitements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste Traitements.Designer.cs">
+      <DependentUpon>Liste Traitements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste TypeDepense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste TypeDepense.Designer.cs">
+      <DependentUpon>Liste TypeDepense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listes dents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listes dents.Designer.cs">
+      <DependentUpon>listes dents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medcin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medcin.Designer.cs">
+      <DependentUpon>Medcin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierPatient.Designer.cs">
+      <DependentUpon>ModifierPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nouveau patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nouveau patient.Designer.cs">
+      <DependentUpon>Nouveau patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nouveau Rendez-Vous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nouveau Rendez-Vous.Designer.cs">
+      <DependentUpon>Nouveau Rendez-Vous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RendezVous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RendezVous.Designer.cs">
+      <DependentUpon>RendezVous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Traitements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traitements.Designer.cs">
+      <DependentUpon>Traitements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Types Dépenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Types Dépenses.Designer.cs">
+      <DependentUpon>Types Dépenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilisateur.Designer.cs">
+      <DependentUpon>Utilisateur.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Caisse.resx">
+      <DependentUpon>Caisse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dents.resx">
+      <DependentUpon>Dents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depenses.resx">
+      <DependentUpon>Depenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste Traitements.resx">
+      <DependentUpon>Liste Traitements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste TypeDepense.resx">
+      <DependentUpon>Liste TypeDepense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listes dents.resx">
+      <DependentUpon>listes dents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medcin.resx">
+      <DependentUpon>Medcin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierPatient.resx">
+      <DependentUpon>ModifierPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nouveau patient.resx">
+      <DependentUpon>Nouveau patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nouveau Rendez-Vous.resx">
+      <DependentUpon>Nouveau Rendez-Vous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RendezVous.resx">
+      <DependentUpon>RendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traitements.resx">
+      <DependentUpon>Traitements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Types Dépenses.resx">
+      <DependentUpon>Types Dépenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilisateur.resx">
+      <DependentUpon>Utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docteur icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-appointment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-appointment %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background cabinet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glossy-3d-blue-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-dialog-error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-metallic-dentist-tools-and-burnishers-on-a--Y65BR2D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-at-a-dentist-appointment-in-a-dental-clini-RJDDJ2X.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-at-a-dentist-appointment-in-a-dental-clini-RJDDJ2X1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth-whitening-procedure-P6FXG4H.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth-polishing-PTK5UGA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backglog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background cabinet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background cabinet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caisse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caisse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatement2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docteur icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docteur icon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rising.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo4-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo4-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo4-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentistemplate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentistemplate1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamplate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\template2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\template21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamplate1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-at-a-dentist-appointment-in-a-dental-clini-RJDDJ2X2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamplate2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamplate3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
